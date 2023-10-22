@@ -1,15 +1,26 @@
 # Task 1
 Behavioural pattern - Options: *Strategy* or *Observer* pattern.
-You chose: <REPLACE WITH PATTERN OF CHOICE>
+You chose: <Strategy>
 
 ## Itemise changes made (which class files were modified)
-1. 
+1. Inventory changes-
+Inventory contructor
+Inventory(ArrayList<ItemInterface> startingStock) method
+setSearch(Searching searching) method
+ArrayList<ItemInterface> searchItems() method
+2. App changes-
+setupSearching(InventoryPage page) method
+3. Searching interface made,All,Name,Description Classes made.
+
+
+
 
 # Task 2
 Structural pattern - *Composite* pattern.
 
 ## Itemise changes made (which class files were modified)
 1. 
+
 
 # Task 3
 
