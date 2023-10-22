@@ -31,26 +31,26 @@ public class App {
         frame.setVisible(true);
     }
 
-    // Task 1: Defining what each button in the UI will do.
+    // Task 1: Defining what each button isetupSearching(InventoryPage page)n the UI will do.
     void setupSearching(InventoryPage page) {
         page.addSearchByButton(new SearchByButton("All", () -> {
-            player.getInventory().setSearch("All");
-            player.getStorageView().setSearch("All");
+            player.getInventory().setSearch(new All());
+            player.getStorageView().setSearch(new All());
         }));
 
         page.addSearchByButton(new SearchByButton("Name", () -> {
-            player.getInventory().setSearch("Name");
-            player.getStorageView().setSearch("Name");
+            player.getInventory().setSearch(new Name());
+            player.getStorageView().setSearch(new Name());
         }));
 
         page.addSearchByButton(new SearchByButton("Description", () -> {
-            player.getInventory().setSearch("Description");
-            player.getStorageView().setSearch("Description");
+            player.getInventory().setSearch(new Description());
+            player.getStorageView().setSearch(new Description());
         }));
     }
 
     void setupCrafting(ItemCraftPage page, Player player) {
-        page.setCraftAction((def) -> System.out.println("Crafting not implemented"));
+        page.setCraftAction((def) -> System.out.println("Crafting not implemented."));
     }
 
     void setupUncrafting(ProductPage page, Player player) {
